@@ -1,4 +1,5 @@
 :root {
+  --clr-primary-300: hsl(30, 92%, 58%);
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-900: hsl(0, 0%, 0%);
     
@@ -6,8 +7,8 @@
   --ff-heading: var(--ff-primary);
    --ff-body: var(--ff-primary); */
 
-  /* --fw-regular: PROBABLY 400;
-  --fw-bold: PROBABLY 700; */
+  --fw-regular: 400;
+  --fw-bold: 700;
 
   --fs-100: .67rem;
   --fs-200: .75rem;
@@ -106,6 +107,9 @@ svg {
 .text-neutral-100 {
   color: var(--clr-neutral-100);
 }
+.text-primary-300 {
+  color: var(--clr-primary-300);
+}
 .text-neutral-900 {
   color: var(--clr-neutral-900);
 }
@@ -115,14 +119,17 @@ svg {
 .bg-neutral-900 {
   background-color: var(--clr-neutral-900);
 }
+.bg-primary-300 {
+  background-color: var(--clr-primary-300);
+}
 
-/* .fw-bold {
+.fw-bold {
   font-weight: var(--fw-bold);
 }
 
 .fw-regular {
   font-weight: var(--fw-regular);
-} */
+}
 
 .fs-h1 {
   font-size: var(--fs-h1);
@@ -148,7 +155,7 @@ svg {
   gap: 1rem;
 }
 
-@media screen and (min-width: 50em) {
+@media (min-width: 50em) {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
@@ -157,3 +164,90 @@ svg {
 
 /* General classes */
 
+body {  
+  max-width: 950px;
+  margin: auto;
+  background-color: var(--clr-neutral-900);
+}
+
+.primary-header {
+  display: flex;  
+  flex-direction: row;
+  padding: 0.5rem;
+}
+
+.primary-nav a {
+  text-decoration: none;
+  color: var(--clr-neutral-900);
+}
+.primary-nav a:hover {  
+  color: var(--clr-primary-300);
+  cursor: pointer;
+}
+
+.main-content {
+  position: relative;  
+  height: 40em;
+}
+
+.main-img {
+  opacity: 0.30;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+.button {  
+  background-color: var(--clr-primary-300);
+  padding: .25rem 1rem;
+  border-radius: 8px;
+}
+
+.container {
+  position: relative;
+  max-width: 30em;  
+  margin: auto;
+  margin-top: 2em;
+  padding-top: 2em;
+  text-align: center;
+  
+}
+.container button {
+  margin: 1em;
+}
+
+.primary-footer {
+  display: grid;
+  grid-template-areas: "A B C"
+  "A D D";
+  text-align: center;
+}
+
+.section-a {
+  grid-area: A;
+  padding-top: 0.5rem;
+}
+.section-b {
+  grid-area: B;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.section-c {
+  grid-area: C;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+.section-d {
+  grid-area: D;  
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav a {  
+  text-decoration: none;
+  color: var(--clr-primary-300);
+}
