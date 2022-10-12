@@ -3,9 +3,9 @@
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-neutral-900: hsl(0, 0%, 0%);
     
-  /* --ff-primary: FONT HERE;
+  --ff-primary: 'Ubuntu', sans-serif;
   --ff-heading: var(--ff-primary);
-   --ff-body: var(--ff-primary); */
+   --ff-body: var(--ff-primary);
 
   --fw-regular: 400;
   --fw-bold: 700;
@@ -165,82 +165,142 @@ svg {
 /* General classes */
 
 body {  
-  max-width: 950px;
+  /* max-width: 80%; */
   margin: auto;
-  background-color: var(--clr-neutral-900);
+  background-image: linear-gradient(rgb(63, 60, 60), black);  
+  max-width: 1000px;
 }
+
+.email-header {  
+  display: block;
+  text-align: center;
+}
+
+
+
+
 
 .primary-header {
   display: flex;  
-  flex-direction: row;
-  padding: 0.5rem;
+  padding: 0.5rem;  
+}
+.primary-header img {
+  height: auto;
+  width: 25em;
+  /* size: ; */
+}
+
+@media screen and (max-width:60em) {  
+  .primary-header {
+    flex-direction: column;
+  }
+  .primary-header img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:35em) {
+  /* nav menu here */
+  .primary-header {
+    background-color: orange;
+  }
+}
+
+.primary-nav {
+  margin: auto;
+  /* margin-right: 2rem;   */
+}
+
+.primary-nav li {
+  display: inline-block;
+  padding-left: 1em;  
 }
 
 .primary-nav a {
   text-decoration: none;
   color: var(--clr-neutral-900);
 }
-.primary-nav a:hover {  
+.primary-nav a:where(:hover,:focus) {  
   color: var(--clr-primary-300);
   cursor: pointer;
 }
 
+
+
+.black-bar {
+  background: --clr-neutral-900;
+  height: 20px;
+  width: 100%;
+}
+.orange-bar {
+  background: var(--clr-primary-300);
+  height: 10px;
+  width: 100%;
+}
+
+
+
 .main-content {
   position: relative;  
-  height: 40em;
 }
 
 .main-img {
   opacity: 0.30;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: auto;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  min-width: 50em;
 }
 
+.main-container {
+  position: absolute;
+  inset: 0;
+  /* max-width: 30em; */
+  width: 80%;
+  margin: auto;
+  margin-top: 2em;
+  padding-top: 2em;  
+  text-align: center;  
+}
+
+@media screen and (max-width:35em) {
+  .main-container {
+    width: 100%;
+    padding: 0.5em;
+  }
+}
+
+.main-container button {
+  margin: 1em;
+}
 .button {  
   background-color: var(--clr-primary-300);
   padding: .25rem 1rem;
   border-radius: 8px;
+  border: 1px;
+  cursor: pointer;
+  transition: transform 100ms ease-in;
+  transform: scale(1.1);
+}
+.button:where(:hover,:focus) {
+  transform: scale(1.15);
+}
+.button:active {
+  transform: scale(1.1);
 }
 
-.container {
-  position: relative;
-  max-width: 30em;  
-  margin: auto;
-  margin-top: 2em;
-  padding-top: 2em;
-  text-align: center;
-  
-}
-.container button {
-  margin: 1em;
-}
+
+
+
+
 
 .primary-footer {
-  display: grid;
-  grid-template-areas: "A B C"
-  "A D D";
-  text-align: center;
+  display: flex;
 }
 
-.section-a {
-  grid-area: A;
-  padding-top: 0.5rem;
-}
-.section-b {
-  grid-area: B;
-  padding: 1rem;
-  padding-bottom: 0;
-}
-.section-c {
-  grid-area: C;
-  padding: 1rem;
-  padding-bottom: 0;
-}
-.section-d {
-  grid-area: D;  
+.footer-a {   
+  justify-self: stretch;
+  flex: 1;
+  margin: auto;
 }
 
 .footer-nav ul {
@@ -251,3 +311,52 @@ body {
   text-decoration: none;
   color: var(--clr-primary-300);
 }
+.footer-nav svg {
+  fill: var(--clr-primary-300);
+  display: inline-block;  
+  width: 1.5rem;
+  aspect-ratio: 1/1;  
+  position: relative;
+  top: 0.3rem;
+}
+
+.footer-nav a:where(:hover,:focus) {
+  color: white;  
+  fill: var(--clr-neutral-100);
+}
+
+
+
+
+.footer-b {
+  padding: 1rem;
+  flex: 2
+}
+
+.footer-b svg {
+  fill: var(--clr-neutral-900);
+  display: inline-block;  
+  width: 1.5rem;
+  aspect-ratio: 1/1;  
+  position: relative;
+  top: 0.3rem;
+}
+
+.footer-b p {
+  text-align: center;
+}
+
+/* @media screen and (max-width:45em) {
+  .float-left {
+    display: block;
+  }
+} */
+
+@media screen and (max-width:45em) {
+  .primary-footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+
