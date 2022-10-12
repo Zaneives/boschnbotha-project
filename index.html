@@ -19,8 +19,13 @@
     </div>
     <header class="primary-header bg-neutral-100">
       <a href="#"><img src="assets/BnBLogo.svg" alt="" /></a>
-      <nav class="primary-nav">
-        <ul role="list" class="fw-bold nav-list">
+      <button class="mobile-nav-toggle" aria-controls="primary-nav">
+        <img class="icon-hamburger" src="assets/hamburger-menu.svg" alt="">
+        <img class="icon-close" src="assets/close-menu.svg" alt="">
+        <span class="visually-hidden">Menu</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav">
+        <ul role="list" class="fw-bold nav-list" >
           <li><a href="#">HOME</a></li>
           <li><a href="#">ABOUT US</a></li>
           <li><a href="#">GALLERY</a></li>
@@ -37,7 +42,7 @@
         <h1 class="fs-h1 text-neutral-100 fw-bold">
           Bosch &amp; Botha Safaris
         </h1>
-        <p><button class="button fw-bold fs-h3">BOOK NOW</button></p>
+        <p><button class="button fw-bold fs-h3" id="button">BOOK NOW</button></p>
         <p class="text-neutral-100">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
           cupiditate assumenda asperiores voluptate error qui sed corporis
@@ -49,7 +54,7 @@
       </div>
     </main>
     <footer class="primary-footer">
-      <div class="footer-a bg-neutral-900 text-primary-300 fs-h3 fw-bold">        
+      <div class="footer-a bg-neutral-900 text-primary-300 fs-h3 fw-bold">
         <nav class="footer-nav" aria-label="social media navigation">
           <ul class="">
             <li>
@@ -76,8 +81,8 @@
         <svg class="icon-phone">
           <use xlink:href="assets/social-icons.svg#icon-phone"></use>
         </svg>
-        076 500 2272 / 071 480 5619 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <span class="float-left">
+        076 500 2272 / 071 480 5619
+        <span class="float-right">
           <svg class="icon-mail">
             <use xlink:href="assets/social-icons.svg#icon-mail"></use>
           </svg>
@@ -87,6 +92,6 @@
       </div>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
