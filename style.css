@@ -166,7 +166,7 @@ svg {
 
 body {  
   max-width: 1000px;
-  max-width: max(80%, 1000px);
+  max-width: max(80%, 1100px);
   margin: auto;
   background-image: linear-gradient(to bottom, rgb(0 0 0 / .8), black);  
 }
@@ -313,6 +313,11 @@ body {
 .main-content {
   position: relative;  
   min-height: 40em;  
+  background-image: url("./assets/cedric-dhaenens-CYQSLIAuzzU-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 48;
 }
 
 
@@ -327,7 +332,7 @@ body {
 }
 
 .main-content::after {
-  content: "";
+  /* content: "";
   position: absolute;
   width: 100%;
   top: 0px;
@@ -338,7 +343,17 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  opacity: 0.2;
+  opacity: 0.2; */  
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  z-index: 49;
+  opacity: .5;
 }
 
 
@@ -392,27 +407,39 @@ body {
 .footer-nav ul {
   list-style: none;
 }
-
 .footer-nav a {    
   color: var(--clr-primary-300);
 }
+.footer-nav a:where(:hover,:focus) {
+  color: white; 
+}
+
 .footer-nav svg {
   fill: var(--clr-primary-300);
   display: inline-block;  
   width: 1.5rem;
-  aspect-ratio: 1/1;  
+  height: 1.5rem;
+  /* aspect-ratio: 1/1;   */
   position: relative;
   top: 0.3rem;
 }
 
-.footer-nav a:where(:hover,:focus) {
-  color: white;    
+/* still trying to wrap my icon around this */
+.icon-wrapping ul {
+  padding-left: 4rem;
+  display: inline-block;
+  list-style-image: url("./assets/icon-mail.svg");
 }
+
+.icon-wrapping li::marker {
+  font-size: 100%;
+}
+
+
 
 .footer-nav a:where(:hover,:focus) svg {
   fill: var(--clr-neutral-100);
 }
-
 
 .footer-b {
   padding: 1rem;
@@ -424,13 +451,14 @@ body {
   fill: var(--clr-neutral-900);
   display: inline-block;  
   width: 1.5rem;
-  aspect-ratio: 1/1;  
+  height: 1.5rem;
   position: relative;
   top: 0.3rem;
 }
 
 .footer-b p {
   text-align: center;
+  padding-top: 0.5rem;
 }
 
 @media screen and (max-width:45em) {
