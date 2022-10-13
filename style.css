@@ -207,7 +207,6 @@ body {
   }
 }
 
-
 .primary-nav li {
   display: inline-block;
   padding-left: 1em;  
@@ -311,6 +310,8 @@ body {
 /* main content */
 
 .main-content {
+  transition: background-image 2s;
+  -moz-transition: background-image 2s;
   position: relative;  
   min-height: 40em;  
   background-image: url("./assets/cedric-dhaenens-CYQSLIAuzzU-unsplash.jpg");
@@ -413,13 +414,15 @@ body {
 .footer-nav a:where(:hover,:focus) {
   color: white; 
 }
+.footer-nav a:where(:hover,:focus) svg {
+  fill: var(--clr-neutral-100);
+}
 
 .footer-nav svg {
   fill: var(--clr-primary-300);
   display: inline-block;  
   width: 1.5rem;
   height: 1.5rem;
-  /* aspect-ratio: 1/1;   */
   position: relative;
   top: 0.3rem;
 }
@@ -436,11 +439,6 @@ body {
 }
 
 
-
-.footer-nav a:where(:hover,:focus) svg {
-  fill: var(--clr-neutral-100);
-}
-
 .footer-b {
   padding: 1rem;
   flex: 2;
@@ -454,6 +452,11 @@ body {
   height: 1.5rem;
   position: relative;
   top: 0.3rem;
+}
+
+.footer-b a:where(:hover,:focus) {
+  color: var(--clr-neutral-100);
+  cursor: pointer;
 }
 
 .footer-b p {
