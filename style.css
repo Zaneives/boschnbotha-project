@@ -377,14 +377,6 @@ body {
   display: flex;
 }
 
-.footer-a {   
-  flex: 1;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  /* margin: auto; */
-}
-
 .footer-nav ul {
   list-style: none;
 }
@@ -407,17 +399,20 @@ body {
   top: 0.3rem;
 }
 
-/* still trying to wrap my icon around this */
-.icon-wrapping ul {
-  padding-left: 4rem;
-  display: inline-block;
-  list-style-image: url("./assets/icon-mail.svg");
+.footer-a {   
+  flex: 1;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  /* margin: auto; */
 }
 
-.icon-wrapping li::marker {
-  font-size: 100%;
+.icon-wrapping {
+  /* display: inline-block; */
+  white-space: nowrap;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-
 
 .footer-b {
   padding: 1rem;
@@ -438,9 +433,12 @@ body {
   color: var(--clr-neutral-100);
   cursor: pointer;
 }
+.footer-b a:where(:hover,:focus) svg {
+  fill: var(--clr-neutral-100);
+}
+
 
 .footer-b p {
-  text-align: center;
   padding-top: 0.5rem;
 }
 
