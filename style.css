@@ -389,7 +389,6 @@ body {
 .footer-nav a:where(:hover,:focus) svg {
   fill: var(--clr-neutral-100);
 }
-
 .footer-nav svg {
   fill: var(--clr-primary-300);
   display: inline-block;  
@@ -401,15 +400,13 @@ body {
 
 .footer-a {   
   flex: 1;
-  text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  /* margin: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .icon-wrapping {
-  /* display: inline-block; */
-  white-space: nowrap;
+  /* white-space: nowrap; */
   padding-left: 1rem;
   padding-right: 1rem;
 }
