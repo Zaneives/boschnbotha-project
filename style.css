@@ -263,19 +263,20 @@ body {
   }
     
   .primary-nav {
-    display: none;    
+    display: none;   
     z-index: 998;         
     position: fixed;    
     line-height: 1.6;
-    /* inset: 0; */
-    top: 0;
+    top: -20rem;
+    /* top: 0; */
     left: 0;
     right: 0;    
     height: 15rem;    
     text-align: center;
     padding: 2.5rem;
     background-color: var(--clr-neutral-100);    
-    box-shadow: 0 0 0.5em hsl(0, 0%, 0%);
+    box-shadow: 0 0 0.5em hsl(0, 0%, 0%);    
+    transition: 0.4s;
   }
   .primary-nav::before {
     content: "";
@@ -406,7 +407,7 @@ body {
 }
 
 .icon-wrapping {
-  /* white-space: nowrap; */
+  white-space: nowrap;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -445,5 +446,3 @@ body {
     text-align: center;
   }
 }
-
-
