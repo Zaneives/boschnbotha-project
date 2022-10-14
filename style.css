@@ -321,7 +321,6 @@ body {
   z-index: 48;
 }
 
-
 .main-container {
   position: relative;
   width: 80%;
@@ -332,19 +331,8 @@ body {
   z-index: 50;
 }
 
-.main-content::after {
-  /* content: "";
-  position: absolute;
-  width: 100%;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: url("./assets/cedric-dhaenens-CYQSLIAuzzU-unsplash.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  opacity: 0.2; */  
+/* semi-transparent film over picture */
+.main-content::after {    
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -356,14 +344,6 @@ body {
   z-index: 49;
   opacity: .5;
 }
-
-
-/* .main-img {
-  opacity: 0.30;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  min-width: 50em;
-} */
 
 @media screen and (max-width:35em) {
   .main-container {
