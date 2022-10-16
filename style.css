@@ -165,7 +165,7 @@ svg {
 /* General classes */
 
 body {  
-  max-width: 1000px;
+  max-width: 1100px;
   max-width: max(80%, 1100px);
   margin: auto;
   background-image: linear-gradient(to bottom, rgb(0 0 0 / .8), black);  
@@ -188,14 +188,14 @@ body {
 }
 .primary-header img {
   height: auto;
-  width: 25em;
+  width: 22em;
 }
 
 .primary-nav {
   margin: auto;
   margin-right: 2rem;  
 }
-@media screen and (max-width:60em) {  
+@media screen and (max-width:91em) {  
   .primary-header {
     flex-direction: column;
   }
@@ -209,7 +209,8 @@ body {
 
 .primary-nav li {
   display: inline-block;
-  padding-left: 1em;  
+  padding-left: .5em;  
+  text-transform: uppercase;
 }
 
 .primary-nav a {
@@ -227,7 +228,7 @@ body {
   display: none; 
 }
 
-@media screen and (max-width:35em) {
+@media screen and (max-width:49em) {
   .mobile-nav-toggle {  
     position: fixed;
     display: block;
@@ -237,7 +238,7 @@ body {
     top: 1.5rem;
     right: 1rem;
     border: 0;
-    padding: 0.5rem;
+    padding: 0.5rem;    
     z-index: 999;
   }
   
@@ -266,17 +267,17 @@ body {
     display: none;   
     z-index: 998;         
     position: fixed;    
-    line-height: 1.6;
+    line-height: 1.5;
     top: -20rem;
     /* top: 0; */
     left: 0;
     right: 0;    
-    height: 15rem;    
+    height: 20rem;    
     text-align: center;
     padding: 2.5rem;
     background-color: var(--clr-neutral-100);    
     box-shadow: 0 0 0.5em hsl(0, 0%, 0%);    
-    transition: 0.4s;
+    transition: 0.4s;    
   }
   .primary-nav::before {
     content: "";
@@ -315,7 +316,7 @@ body {
   -moz-transition: background-image 2s;
   position: relative;  
   min-height: 40em;  
-  background-image: url("./assets/cedric-dhaenens-CYQSLIAuzzU-unsplash.jpg");
+  background-image: url("./assets/image1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
