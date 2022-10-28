@@ -61,24 +61,14 @@ carouselImages[0].style.display="block"
 carouselImages[0].style.filter="opacity(0.4)"
 
 function carouselLoop() {
-    carouselImages[counter].style.filter="opacity(0.1)"
-    carouselImages[counter].style.display="none"
-    counter = (counter + 1)%numberOfImages
-    carouselImages[counter].style.display="block"
-    setTimeout(() => {
-        carouselImages[counter].style.filter="opacity(0.4)"    
-    }, 50);
+    carouselImages[counter].style.filter="opacity(0)"
+    setTimeout(() => {                                      // transition won't work with display property. Had to put a timeout for it to work.
+        carouselImages[counter].style.display="none"
+        counter = (counter + 1)%numberOfImages
+        carouselImages[counter].style.display="block"
+        setTimeout(() => {
+            carouselImages[counter].style.filter="opacity(0.4)"    
+        }, 50)
+    }, 1200)
 }
-setInterval(() => carouselLoop(), 10000)
-
-
-// setInterval(() => {
-//     carouselImages[0].style.display="none"
-//     carouselImages[1].style.filter="opacity(0.1)"    
-//     carouselImages[1].style.display="block"
-//     setTimeout(() => {
-//         carouselImages[1].style.filter="opacity(0.4)"    
-//     }, 50);
-// }, 5000)
-
-// carouselImages[4].style.display="block"
+setInterval(carouselLoop, 10000)
