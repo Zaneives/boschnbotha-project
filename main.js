@@ -53,22 +53,40 @@ navToggle.addEventListener("click", () => {
 // looper()
 // setInterval(function(){looper()},20000)
     
-// *carousel v3
+// *carousel v3.2. Now with eventlistener!
 const carouselImages = document.querySelectorAll(".main-images img")
-let counter = 0;
-let numberOfImages = 5;     // set number of images here
+const carouselCSS = document.querySelector(".main-images img").style
 carouselImages[0].style.display="block"
 carouselImages[0].style.filter="opacity(0.4)"
 
+// settings
+let counter = 0;                // set starting picture (starting at 0)
+const numberOfImages = 5;       // set number of images here
+const imageInterval = 12;       // set interval for images (in seconds)
+carouselCSS.transition="1.2s";  // set fadeout/in
+
 function carouselLoop() {
     carouselImages[counter].style.filter="opacity(0)"
-    setTimeout(() => {                                      // transition won't work with display property. Had to put a timeout for it to work.
+    carouselImages[counter].addEventListener("transitionend",() => {
         carouselImages[counter].style.display="none"
         counter = (counter + 1)%numberOfImages
         carouselImages[counter].style.display="block"
         setTimeout(() => {
             carouselImages[counter].style.filter="opacity(0.4)"    
         }, 50)
-    }, 1200)
+    }, {once: true})    
 }
-setInterval(carouselLoop, 10000)
+setInterval(carouselLoop, imageInterval * 1000)
+
+// function carouselLoop() {
+//     carouselImages[counter].style.filter="opacity(0)"
+//     setTimeout(() => {                                      // transition won't work with display property. Had to put a timeout for it to work.
+//         carouselImages[counter].style.display="none"
+//         counter = (counter + 1)%numberOfImages
+//         carouselImages[counter].style.display="block"
+//         setTimeout(() => {
+//             carouselImages[counter].style.filter="opacity(0.4)"    
+//         }, 50)
+//     }, 1200)
+// }
+// setInterval(carouselLoop, 10000)
