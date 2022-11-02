@@ -45,24 +45,23 @@
     <div class="black-bar"></div>
     <div class="orange-bar"></div>
 
-    <main class="bg-neutral-900 main-container">      
+    <main class="bg-neutral-900 main-container">
+      <!-- <div class="main-images" aria-label="image carousel">
+        <img src="./images/image1.webp" alt="rhino and wildebeest around water's edge"/>
+        <img src="./images/image2.webp" alt="landrover riding on a safari trail"/>
+        <img src="./images/image3.webp" alt="leopard lying in a tree"/>
+        <img src="./images/image4.webp" alt="a family of elephants walking along the river banks"/>
+        <img src="./images/image5.webp" alt="two zebra side to side facing camera"/>
+      </div> -->
+      <!-- <div class="carousel-image" style="background-image: url('./images/image1.webp');"></div>
+        <div class="carousel-image" style="background-image: url('./images/image2.webp');"></div>
+        <div class="carousel-image" style="background-image: url('./images/image3.webp');"></div>
+        <div class="carousel-image" style="background-image: url('./images/image4.webp');"></div>
+        <div class="carousel-image" style="background-image: url('./images/image5.webp');"></div> -->
       <div id="fadeout"></div>
       <div id="img-creator"></div>
-      <!-- images will be inserted here -->
       <div class="main-content">
-        <h1 class="fs-h1 text-neutral-100 fw-bold">Activities</h1>
-        <div class="activity-list text-neutral-100 fw-bold">
-          <ul>
-            <li>Addo Elephant National Park</li>
-            <li>Deep Sea Fishing</li>
-            <li>Skydive</li>
-            <li>Horse Riding</li>
-            <li>BUngee Jump Bloukrans Bridge</li>
-            <li>Elephant Sanctuary Plettenburg Bay</li>
-            <li>Monkeyland</li>
-            <li>Spa</li>
-          </ul>
-        </div>
+        <h1>Enter content here</h1>
       </div>
     </main>
 

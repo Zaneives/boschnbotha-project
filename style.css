@@ -311,45 +311,8 @@ body {
 
 /* main content */
 
-/*! image carousel v1 */
-/* .main-content {
-  position: relative;  
-  min-height: 40em;  
-  background-image: url("./assets/image1.webp");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  z-index: 48;
-}
-.main-container {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  padding: 0.5em;
-  padding-top: 2em;  
-  text-align: center;  
-  z-index: 50;
-} */
-/* semi-transparent film over picture */
-/* .main-content::after {    
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  content: "";
-  position: absolute;
-  width: 100%;
-  background-color: black;
-  z-index: 49;
-  opacity: .5;
-} */
-
-/*! image carousel v2 */
-.main-content {
-  position: relative;  
-}
-
-.main-content img {
+/*! image carousel v2 start */
+/* .main-container img {
   display: none;
   object-position: center center;
   object-fit:cover;
@@ -360,26 +323,103 @@ body {
   transition: 1.5s;
 }
 
-.main-container {
+.about-us {
   position: absolute;
+  max-width: 70rem;  
   inset: 0;
-  padding: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 2em;  
+  text-align: center;  
+  z-index: 50;  
+} */
+/*! image carousel v2 end */
+
+
+/*! image carousel v1 start*/
+
+.main-container {
+  position: relative;  
+  min-height: 40em;   
+  width: 100%;
+}
+
+
+.carousel-image {
+  position: absolute;
+  display: none;  
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;  
+  z-index: 48;
+}
+#fadeout {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  opacity: .6;
+  z-index: 49;
+  transition: 1.2;
+}
+
+.main-content {
+  /* min-height: 40em;     */
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  /* padding: 0.5em; */
+  padding-top: 2em;  
+  padding-bottom: 2em;
   text-align: center;  
   z-index: 50;
 }
 
+.main-content h1 {
+  color: var(--clr-neutral-100);
+}
+
+.about-us h1 {
+  padding-bottom: 2rem;
+}
+
+.about-us p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: var(--clr-neutral-100);
+}
+
+
+/* semi-transparent film over picture */
+/* .main-container::after {    
+  content: "";
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  background-color: black;
+  z-index: 49;
+  opacity: .5;
+} */
+/*! image carousel v1 end*/
+
+
+
 
 @media screen and (max-width:35em) {
-  .main-container {
+  .main-content {
     width: 100%;
     padding: 0.75em;
   }
 }
 
-.main-container button {
-  margin: 1.5em;
-}
+
+/* button */
 .btn {  
   background-color: var(--clr-primary-300);
   padding: .25rem 1rem;
@@ -396,8 +436,8 @@ body {
   transform: scale(1.1);
 }
 
-/* footer */
 
+/* footer */
 .primary-footer {
   display: flex;
 }
