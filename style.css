@@ -133,6 +133,9 @@ svg {
   font-weight: var(--fw-regular);
 }
 
+.fs-big {
+  font-size: var(--fs-800);
+}
 .fs-h1 {
   font-size: var(--fs-h1);
 }
@@ -367,28 +370,15 @@ body {
 }
 
 .main-content {
-  /* min-height: 40em;     */
   display: block;
-  position: relative;
-  width: 80%;
+  position: relative;  
   margin: auto;
-  /* padding: 0.5em; */
   padding-top: 2em;  
   padding-bottom: 2em;
   text-align: center;  
-  /* z-index: 50; */
 }
 
 .main-content h1 {
-  color: var(--clr-neutral-100);
-}
-
-.about-us h1 {
-  padding-bottom: 2rem;
-}
-
-.about-us p {
-  font-size: clamp(1rem, 3vw, 1.5rem);
   color: var(--clr-neutral-100);
 }
 
@@ -511,22 +501,51 @@ body {
   }
 }
 
+/* about us */
+.about-us {
+  width: 80%;
+  margin: auto;
+}
+
+.about-us h1 {
+  padding-bottom: 2rem;
+}
+
+.about-us p {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  color: var(--clr-neutral-100);
+}
+
+
 /* accomodation */
 .accomodation {
   line-height: 1.6;  
+  width: 80%;
+  margin: auto;
 }
 .accomodation h1 {
   padding-top: 2rem;
+  font-weight: var(--fw-bold);
 }
 .accomodation p {
   padding-block: 2rem;
-  /* font-size: clamp(1rem, 3vw, 1.5rem); */
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+@media screen and (max-width:45em) {
+  .about-us {
+    width: 100%;
+  }
+  .accomodation {
+    width: 100%;
+  }
 }
 
 /* activity-list */
 .activity-list {
   line-height: 2.2;
   margin-top: 2rem;
+  margin: auto;
 }
 
 /* gallery */
@@ -655,4 +674,61 @@ body {
 .prev:hover, .next:hover {
   /* background-color: rgba(0,0,0,0.8); */
   background-color: rgba(150,150,150,0.8);
+}
+
+/* pricelist */
+.pricelist {
+  display: flex;  
+  align-items: center;  
+  flex-direction: column;
+  color: var(--clr-neutral-100);
+}
+
+.pricelist > * {
+  /* margin-top: .5rem; */
+  padding-top: .5rem;
+}
+.pricelist h2 {
+  padding-top: 1rem;
+}
+.pricelist table {
+  text-align: start;
+  border-collapse:collapse;
+  /* width: 700px; */
+}
+.pricelist table table { display:inline;vertical-align:top; }
+
+.pricelist table table td {
+  border: 2px solid var(--clr-neutral-100);  
+}
+.pricelist table table td:where(:first-child,:nth-child(3)) {
+  width: 260px;
+}
+.pricelist table table td:where(:nth-child(2),:nth-child(4)) {
+  width: 70px;
+  text-align: end;
+}
+.pricelist table table tr:hover {
+  background-color: rgba(150,150,150,.7);
+}
+.pricelist a {
+  color: var(--clr-primary-300);
+}
+
+#daily-rate tr td:first-child {
+  width: 330px;
+}
+#daily-rate tr td:last-child {
+  min-width: 80px;
+  max-width: 80px;
+}
+#rates li {
+  text-align: start;  
+}
+
+.contact-us {
+color: var(--clr-neutral-100);
+}
+.contact-us a {
+  color: var(--clr-neutral-100);
 }

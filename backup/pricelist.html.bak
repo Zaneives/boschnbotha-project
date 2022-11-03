@@ -52,7 +52,7 @@
       <!-- images will be inserted here -->
       <div class="main-content">
         <div class="pricelist">
-          <h1 class="fs-big fw-bold">Pricelist</h1>
+          <h1 class="fs-h1">Pricelist</h1>
           <table class="text-neutral-100">
             <tr>
               <td>
@@ -246,43 +246,149 @@
               </td>
             </tr>
           </table>
-          <h2 class="fw-bold fs-h2">DAILY RATE</h2>
-          <table id="daily-rate">
+
+          <!-- <table class="text-neutral-100">
             <tr>
-              <td>1 HUNTER, 1 PROFESSIONAL HUNTER</td>
-              <td>US $400</td>
+              <td>AARDWOLF</td>
+              <td>$1300</td>
+              <td>NYALA</td>
+              <td>$2200</td>
             </tr>
             <tr>
-              <td>2 HUNTERS, 1 PROFESSIONAL HUNTER</td>
-              <td>US $ 325</td>
+              <td>BABOON</td>
+              <td>$ 180</td>
+              <td>ORIBI</td>
+              <td>POR</td>
             </tr>
             <tr>
-              <td>OBSERVER</td>
-              <td>US $ 250</td>
+              <td>BLESBUCK, COMMON</td>
+              <td>$ 400</td>
+              <td>ORYX/GEMSBUCK</td>
+              <td>$1100</td>
             </tr>
-          </table>
-          <div id="rates">
-            <h2 class="fs-h2 fw-bold">Rates Include:</h2>
-            <ul>
-              <li>Accommodation, meals, beverages and daily laundy services</li>
-              <li>Services of professional hunter and tracker/skinner</li>
-              <li>Hunting Vehicle</li>
-              <li>Pick up and drop off at Port Elizabeth airport.</li>
-              <li>Field preparation of trophies and hunting licenses.</li>
-            </ul>
-            <h2 class="fs-h2 fw-bold">Rates Exclude:</h2>
-            <ul>
-              <li>Wounded/lost and trophy animals</li>
-              <li>Rifle hires and ammunition</li>
-              <li>Accommodation before arrival in camp and departure from camp</li>
-              <li>Tips and Gratuities</li>
-              <li>All taxidermy fees, dip and pack fees</li>
-              <li>Medical rescue insurance for duration of safari</li>
-              <li>Extra activities/tours</li>
-            </ul>
-          </div>
-          <p>Download pricelist <a href="./assets/Bosch& Botha Safaris pryslys finaal.pdf" target="_blank">HERE</a></p>
-        </div>      
+            <tr>
+              <td>BLESBUCK, WHITE</td>
+              <td>$ 680</td>
+              <td>OSTRICH</td>
+              <td>$ 550</td>
+            </tr>
+            <tr>
+              <td>BONTEBOK</td>
+              <td>POR</td>
+              <td>PORCUPINE</td>
+              <td>$ 100</td>
+            </tr>
+            <tr>
+              <td>BUFFALO, CAPE</td>
+              <td>POR</td>
+              <td>REEDBUCK, COMMON</td>
+              <td>$1300</td>
+            </tr>
+            <tr>
+              <td>BUSHBUCK, CAPE</td>
+              <td>$ 700</td>
+              <td>REEDBUCK, MOUNTAIN</td>
+              <td>$ 600</td>
+            </tr>
+            <tr>
+              <td>BUSHPIG</td>
+              <td>$ 700</td>
+              <td>RHEBUCK, VAAL</td>
+              <td>$1300</td>
+            </tr>
+            <tr>
+              <td>CARACAL/LYNX</td>
+              <td>$ 700</td>
+              <td>ROAN ANTELOPE</td>
+              <td>POR</td>
+            </tr>
+            <tr>
+              <td>CROCODILE</td>
+              <td>POR</td>
+              <td>SABLE ANTELOPE</td>
+              <td>POR</td>
+            </tr>
+            <tr>
+              <td>DUIKER, BLUE</td>
+              <td>$1500</td>
+              <td>SPRINGBUCK, BLACK</td>
+              <td>$ 600</td>
+            </tr>
+            <tr>
+              <td>DUIKER, COMMON</td>
+              <td>$ 300</td>
+              <td>SPRINGBUCK, COMMON</td>
+              <td>$ 450</td>
+            </tr>
+            <tr>
+              <td>ELAND, CAPE</td>
+              <td>$2800</td>
+              <td>SPRINGBUCK, COPPER</td>
+              <td>$ 900</td>
+            </tr>
+            <tr>
+              <td>FALLOW DEER</td>
+              <td>$ 600</td>
+              <td>SPRINGBUCK, WHITE</td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>GIRAFFE</td>
+              <td>$4000</td>
+              <td>STEENBUCK</td>
+              <td>$ 400</td>
+            </tr>
+            <tr>
+              <td>GRYSBUCK, CAPE</td>
+              <td>$1500</td>
+              <td>TSESSEBE</td>
+              <td>POR</td>
+            </tr>
+            <tr>
+              <td>HARTEBEEST, RED</td>
+              <td>$ 950</td>
+              <td>WARTHOG</td>
+              <td>$ 450</td>
+            </tr>
+              <td>IMPALA, BLACK</td>
+              <td>$1800</td>
+              <td>WATERBUCK</td>
+              <td>$2000</td>
+            </tr>
+            <tr>
+              <td>IMPALA, COMMON</td>
+              <td>$ 400</td>
+              <td>WILDEBEEST, BLACK</td>
+              <td>$1100</td>
+            </tr>
+            <tr>
+              <td>KLIPSPRINGER</td>
+              <td>$1450</td>
+              <td>WILDEBEEST, BLUE</td>
+              <td>$1100</td>
+            </tr>
+            <tr>
+              <td>KUDU, CAPE</td>
+              <td>$1350</td>
+              <td>WILDEBEEST, GOLDEN</td>
+              <td>$2200</td>
+            </tr>
+            <tr>
+              <td>LECHWE, RED</td>
+              <td>$2300</td>
+              <td>ZEBRA, BURCHELL</td>
+              <td>$1200</td>
+            </tr>
+            <tr>
+              <td>MONKEY, VERVET</td>
+              <td>$ 100</td>
+              <td>ZEBRA, MOUNTAIN</td>
+              <td>$2000</td>
+            </tr>
+          </table> -->
+        </div>  
+    
+    
       </div>
     </main>
 
