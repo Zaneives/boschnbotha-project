@@ -23,7 +23,7 @@
     </div>
 
     <header class="primary-header bg-neutral-100">
-      <a href="#"><img src="assets/BnBLogo.svg" alt="company logo" /></a>
+      <a href="./index.html"><img src="assets/BnBLogo.svg" alt="company logo" /></a>
       <button class="mobile-nav-toggle" aria-controls="primary-nav">
         <img class="icon-hamburger" src="assets/hamburger-menu.svg" alt="" />
         <img class="icon-close" src="assets/close-menu.svg" alt="" />
@@ -49,9 +49,11 @@
       <div id="fadeout"></div>
       <div id="img-creator"></div>
       <!-- images will be inserted here -->
-      <div class="modal">
+      <div class="modal modalAni">
         <span>&times;</span>
-        <img src="./images/image1.webp" alt="" />
+        <a class="prev" onclick="shiftSlides(-1)">❮</a>
+        <a class="next" onclick="shiftSlides(1)">❯</a>
+        <img class="" src="./images/image1.webp" alt="" />
       </div>
       <div class="grid-wrapper">
         <div class="grid-item">
@@ -136,6 +138,7 @@
     </footer>
 
     <script src="./main.js"></script>
+    <script src="./carousel.js"></script>
     <script src="./gallery.js"></script>
   </body>
 </html>
