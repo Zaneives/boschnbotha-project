@@ -24,7 +24,7 @@
   --fs-h1: var(--fs-700);
   --fs-h2: var(--fs-600);
   --fs-h3: var(--fs-500);
-  --fs-body: var(--fs-400)
+  --fs-body: var(--fs-400);
   --fs-h5: var(--fs-300);
   --fs-h6: var(--fs-100);
   
@@ -499,6 +499,7 @@ body {
 .about-us p {
   font-size: clamp(1rem, 3vw, 1.5rem);
   color: var(--clr-neutral-100);
+  padding-block: 1rem;
 }
 
 
@@ -769,4 +770,8 @@ color: var(--clr-neutral-100);
   max-width: min(40ch, 100%);
   border-radius: 10px;
   padding: 0.5rem;
+}
+
+.thank-you h1 {
+  padding-block: 3rem;
 }
