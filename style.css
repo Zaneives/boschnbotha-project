@@ -381,21 +381,6 @@ body {
 .main-content h1 {
   color: var(--clr-neutral-100);
 }
-
-
-/* semi-transparent film over picture */
-/* .main-container::after {    
-  content: "";
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  position: absolute;
-  width: 100%;
-  background-color: black;
-  z-index: 49;
-  opacity: .5;
-} */
 /*! image carousel v1 end*/
 
 
@@ -620,7 +605,7 @@ body {
   right: 20px;
   color: white;
   font-size: 4rem;
-  z-index: 51;
+  z-index: 52;
 }
 
 .modal img {
@@ -634,6 +619,7 @@ body {
   height: auto;
   top: 50%;
   opacity: 1;
+  z-index: 51;
 }
 
 .modalAni {
@@ -659,6 +645,7 @@ body {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
+  z-index: 52;
 }
 
 .prev {
@@ -731,4 +718,55 @@ color: var(--clr-neutral-100);
 }
 .contact-us a {
   color: var(--clr-neutral-100);
+}
+
+#form-name {
+  white-space: nowrap;
+  display: inline-block;
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-neutral-100); 
+  border-radius: 10px;
+  margin-block: 0.5rem; 
+  padding-right: .5rem;
+}
+#form-name input {
+  border: none;
+  appearance: none;
+  outline:none;
+}
+
+
+#form-name label {
+  display: inline-block;
+  background-color: var(--clr-primary-300);
+  border-radius: 10px 0px 0px 10px;
+  padding-block: .25rem;
+  padding-inline: .6rem;
+}
+
+#form-email {
+  white-space: nowrap;
+  display: inline-block;
+  color: var(--clr-neutral-900);
+  background-color: var(--clr-neutral-100); 
+  border-radius: 10px;
+  margin-block: 0.5rem; 
+  padding-right: .5rem;
+}
+#form-email label {
+  display: inline-block;
+  background-color: var(--clr-primary-300);
+  border-radius: 10px 0px 0px 10px;
+  padding-block: .25rem;
+  padding-inline: .6rem;
+}
+#form-email input {
+  border: none;
+  outline:none;  
+}
+
+#form-textarea textarea{
+  max-width: min(40ch, 100%);
+  border-radius: 10px;
+  padding: 0.5rem;
 }
