@@ -528,11 +528,39 @@ body {
 }
 
 /* activity-list */
-.activity-list {
-  line-height: 2.2;
-  margin-top: 2rem;
+.activity-content {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: space-around;
+  flex: 1 1;
+}
+.activity-image {
+  position: relative;
+  width: min(450px,100%);
+  height:auto;
+  object-fit:contain;
   margin: auto;
 }
+.activity-list {
+  text-align: start;
+  line-height: 2.2;
+  margin: auto;
+  padding-left: 1.2rem;
+}
+@media screen and (max-width:900px) {
+  .activity-content {
+    flex-direction: column;
+    width: 100%;
+  }
+  .activity-image {
+    margin: auto;
+  }
+  .activity-list {
+    text-align: center;
+  }
+}
+
 
 /* gallery */
 .grid-wrapper {
