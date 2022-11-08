@@ -557,6 +557,7 @@ body {
     margin: auto;
   }
   .activity-list {
+    margin-top: 2rem;
     text-align: center;
   }
 }
