@@ -1,11 +1,9 @@
 // *carousel v4.1 - background image version
 // *add or remove images here
 const images = [
-    "./images/image1.webp",
-    "./images/image2.webp",
-    "./images/image3.webp",
-    "./images/image4.webp",
-    "./images/image5.webp",
+    "./assets/images/image1.jpeg",
+    "./assets/images/image2.jpeg",
+    "./assets/images/image4.jpeg",
 ]
 
 // *inserts the images (from list above) into the page.
